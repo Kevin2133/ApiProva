@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const server = express();
-server.use(cors({origin: "http://easycodingkev.ezyro.com/"}));
+server.use(cors({origin: ["http://easycodingkev.ezyro.com/", "http://localhost:5500"]}));
 const data = require("./data.json");
 
 let port = process.env.PORT || 3000;
