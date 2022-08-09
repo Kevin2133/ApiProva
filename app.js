@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const server = express();
 server.use(cors({
-    origin: 'https://easycodingkev.netlify.app/'
+    origin: ['https://easycodingkev.netlify.app/', 'https://google.com']
 }));
 const data = require("./data.json");
 
