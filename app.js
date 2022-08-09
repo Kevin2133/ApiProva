@@ -2,7 +2,7 @@ const express = require("express");
 const server = express();
 const data = require("./data.json");
 
-const port = 3000;
+let port = process.env.PORT || 3000;
 
 server.get("/", (req, res) => {
     res.send(JSON.stringify(data));
