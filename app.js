@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const server = express();
-server.use(cors({origin: ["http://easycodingkev.ezyro.com/", "http://127.0.0.1:5500/index.html"]}));
+server.use(cors({origin: ["https://easycodingkev.netlify.app/", "http://127.0.0.1:5500/index.html"]}));
 const data = require("./data.json");
 
 let port = process.env.PORT || 3000;
